@@ -7,7 +7,7 @@ setup(
   description = 'Help for complex calculations, and homework',   # Give a short description about your library
   author = 'Ishan Roychowdhury',                   # Type in your name
   author_email = 'piklenews@gmail.com',      # Type in your E-Mail
-  url = 'https://pillowware101.github.io/website/',   # Provide either the link to your github or to your website
+  url = 'https://github.com/hi101000/mathhelp/releases/tag/v.0.1.3',   # Provide either the link to your github or to your website
   download_url = 'https://pillowware101.github.io/website/downloads',    # I explain this later on
   keywords = ['Help', 'Math'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
