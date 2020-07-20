@@ -1,0 +1,1 @@
+This is a module devoted to helping ypou do complex math calcuations in python(for homework or other stuff)
