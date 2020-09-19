@@ -1,4 +1,6 @@
 import math
+import numpy, scipy
+import matplotlib.pyplot as plt
 
 def TR(n):
 	'''function to gve you triangular number n'''
