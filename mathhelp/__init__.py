@@ -48,3 +48,32 @@ def Fibonacci(n):
         return 1
     else:
         return Fibonacci(n-1)+Fibonacci(n-2)
+
+class RightTriangle:
+    def __init__(self, angleone, hypotenuse, leg1, leg2):
+        self.1stangle=angleone
+        self.s1=hypotenuse
+        self.s2=leg1
+        self.s3=leg2
+    def draw(self):
+        import turtle
+        turtle.rt(90)
+        turtle.fd(self.s2)
+        turtle.lt(90)
+        turtle.fd(self.s3)
+        turtle.lt(self.1stangle)
+        turtle.fd(self.s1)
+
+def absval(x):
+    if x<0:
+        return -x
+    elif x>=0:
+        return x
+    else:
+        return "enter a valid number"
+
+def graph_equation(formula, x_range):
+    x = numpy.array(x_range)
+    y = eval(formula)
+    plt.plot(x, y)
+    plt.show()
