@@ -1,6 +1,12 @@
 import math
+<<<<<<< Updated upstream
 import numpy, scipy
 import matplotlib.pyplot as plt
+=======
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy
+>>>>>>> Stashed changes
 
 def TR(n):
 	'''function to gve you triangular number n'''
@@ -30,11 +36,27 @@ def pow(x, y):
 	n=x**y
 	return n
 
+<<<<<<< Updated upstream
 def pythagorean(a, b):
 	'''return c from a and b, for pythagorean theorem'''
 	c2=pow(a, 2)+pow(b, 2)
 	c=sqrtofn(c2)
 	return c
+=======
+def absgraph(x):
+        pass
+def dectofrac(dec):
+    frac=str(dec)+'/1'
+    return frac
+def factorial(x):
+	numlist=[]
+	for y in range(x):
+		numlist.append(y)
+	z=1
+	for y in numlist:
+		z*=y
+	return z
+>>>>>>> Stashed changes
 
  
 def Fibonacci(n):
