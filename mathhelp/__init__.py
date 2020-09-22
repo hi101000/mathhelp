@@ -94,6 +94,7 @@ def absval(x):
     elif x>=0:
         return x
     else:
+        print("enter a valid number")
         return "enter a valid number"
 
 def graph_equation(formula, x_range):
