@@ -10,7 +10,6 @@ setup(
   name = 'mathhelp',         # How you named your package folder (MyLib)
   packages = ['mathhelp'],   # Chose the same as "name"
   version = '0.1.9',      # Start with a small number and increase it with every change you make
-  version = '0.1.5',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Help for complex calculations, and homework',   # Give a short description about your library
   author = 'Ishan Roychowdhury',                   # Type in your name
