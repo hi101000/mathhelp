@@ -32,8 +32,6 @@ def pow(x, y):
 	c2=pow(a, 2)+pow(b, 2)
 	c=sqrtofn(c2)
 	return c
-def absgraph(x):
-        pass
 def dectofrac(dec):
     frac=str(dec)+'/1'
     return frac
@@ -102,3 +100,6 @@ def graph_equation(formula, x_range):
     y = eval(formula)
     plt.plot(x, y)
     plt.show()
+
+def absgraph(x):
+    graph_equation(abs(x))
