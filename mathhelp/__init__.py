@@ -1,6 +1,7 @@
 import math
 import numpy, scipy
 import matplotlib.pyplot as plt
+import constants
 
 
 def TR(n):
@@ -12,8 +13,9 @@ def tn(n, t1, d):
 	return tn
 
 #define some constants
-pi=3.14159265358979323846264338327950
-e=2.7182818284590452353602874713527
+pi=(3.14159265358979323846264338327950)
+e=(2.7182818284590452353602874713527)
+
 
 def sqrtofn(n):
 	sqrty=math.sqrt(n)
@@ -64,6 +66,7 @@ class RightTriangle:
         self.s2=leg1
         self.s3=leg2
         self.angle3=90
+        self.angle2=self.angle3-self.angle1
     def draw(self):
         import turtle
         turtle.rt(90)
@@ -100,5 +103,8 @@ def graph_equation(formula, x_range):
     plt.plot(x, y)
     plt.show()
 
-def absgraph(x):
-    graph_equation(abs(x))
+def absgraph(x, x_range):
+    graph_equation(abs(x), x_range)
+
+class Circle:
+    def __init__(radius)
