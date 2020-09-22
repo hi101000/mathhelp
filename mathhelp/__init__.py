@@ -1,19 +1,13 @@
 import math
-<<<<<<< Updated upstream
 import numpy, scipy
 import matplotlib.pyplot as plt
-=======
-import numpy as np
-import matplotlib.pyplot as plt
-import scipy
->>>>>>> Stashed changes
+
 
 def TR(n):
 	'''function to gve you triangular number n'''
 	tr=n*(n-1)
 	return tr
 def tn(n, t1, d):
-	'''gives you term n in an arithmatic sequence'''
 	tn=t1+d*(n-1)
 	return tn
 
@@ -22,7 +16,6 @@ pi=3.14159265358979323846264338327950
 e=2.7182818284590452353602874713527
 
 def sqrtofn(n):
-	'''give square root of n'''
 	sqrty=math.sqrt(n)
 	return sqrty
 
@@ -32,17 +25,13 @@ def square(n):
 	return n
 
 def pow(x, y):
-	'''return x raised to the power y'''
 	n=x**y
 	return n
 
-<<<<<<< Updated upstream
-def pythagorean(a, b):
 	'''return c from a and b, for pythagorean theorem'''
 	c2=pow(a, 2)+pow(b, 2)
 	c=sqrtofn(c2)
 	return c
-=======
 def absgraph(x):
         pass
 def dectofrac(dec):
@@ -56,7 +45,6 @@ def factorial(x):
 	for y in numlist:
 		z*=y
 	return z
->>>>>>> Stashed changes
 
  
 def Fibonacci(n):
@@ -73,18 +61,32 @@ def Fibonacci(n):
 
 class RightTriangle:
     def __init__(self, angleone, hypotenuse, leg1, leg2):
-        self.1stangle=angleone
+        '''leg1=opposite, leg2=adjacent, hypotenuse=hypotenuse'''
+        self.angle1=angleone
         self.s1=hypotenuse
         self.s2=leg1
         self.s3=leg2
+        self.angle3=90
     def draw(self):
         import turtle
         turtle.rt(90)
         turtle.fd(self.s2)
         turtle.lt(90)
         turtle.fd(self.s3)
-        turtle.lt(self.1stangle)
+        turtle.lt(self.angle1)
         turtle.fd(self.s1)
+    def sin(self):
+        return self.s2/self.hypotenuse
+    def cos(self):
+        return self.s3/hypotenuse
+    def tan(self):
+        return self.s2/self.s3
+    def changedimensions(self, newhypotenuse, newleg1, newleg2):
+        self.s1=newhypotenuse
+        self.s2=newleg1
+        self.s3=newleg2
+    def changeangles(self, newangle1):
+        self.angle1=newangle1
 
 def absval(x):
     if x<0:
