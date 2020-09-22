@@ -15,7 +15,7 @@ setup(
   author = 'Ishan Roychowdhury',                   # Type in your name
   author_email = 'piklenews@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/hi101000/mathhelp',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/hi101000/mathhelp/releases/tag/v.0.1.8',    # I explain this later on
+  download_url = 'https://github.com/hi101000/mathhelp/releases/tag/v.0.1.9',    # I explain this later on
   keywords = ['Help', 'Math'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'numpy',
