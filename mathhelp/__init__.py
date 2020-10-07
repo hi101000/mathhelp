@@ -13,8 +13,8 @@ def tn(n, t1, d):
 	return tn
 
 #define some constants
-pi=(3.14159265358979323846264338327950)
-e=(2.7182818284590452353602874713527)
+PI=3.14159265358979323846264338327950
+E=2.7182818284590452353602874713527
 
 
 def sqrtofn(n):
@@ -36,7 +36,8 @@ def pow(x, y):
 	return c
 def dectofrac(dec):
     frac=str(dec)+'/1'
-    return frac
+    return float(frac)
+    return float(frac)
 def factorial(x):
 	numlist=[]
 	for y in range(x):
@@ -94,7 +95,6 @@ def absval(x):
     elif x>=0:
         return x
     else:
-        print("enter a valid number")
         return "enter a valid number"
 
 def graph_equation(formula, x_range):
@@ -107,4 +107,16 @@ def absgraph(x, x_range):
     graph_equation(abs(x), x_range)
 
 class Circle:
-    def __init__(radius)
+    def __init__(radius):
+        self.radius=radius
+        self.diameter=self.radius*2
+        self.circum=2*self.radius*PI
+        self.area=PI*self.radius*self.radius
+    def draw(self):
+        import turtle
+        turtle.circle(self.radius)
+    def changestuff(newrad):
+        self.radius=newrad
+        self.diameter=self.radius*2
+        self.circum=2*self.radius*PI
+        self.area=PI*self.radius*self.radius
